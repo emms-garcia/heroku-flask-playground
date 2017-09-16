@@ -1,0 +1,8 @@
+{
+  "name": "Heroku Flask Playground",
+  "description": "Getting started with Python (Flask) on Heroku.",
+  "image": "heroku/python",
+  "repository": "https://github.com/synnick/heroku-flask-playground",
+  "keywords": ["python", "flask" ],
+  "addons": [ "heroku-postgresql" ]
+}
