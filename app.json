@@ -4,5 +4,11 @@
   "image": "heroku/python",
   "repository": "https://github.com/synnick/heroku-flask-playground",
   "keywords": ["python", "flask" ],
-  "addons": [ "heroku-postgresql" ]
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "A secret key.",
+      "generator": "secret"
+    }
+  }
 }
