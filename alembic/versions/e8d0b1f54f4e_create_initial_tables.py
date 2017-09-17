@@ -1,7 +1,7 @@
 """create initial tables
 Revision ID: e8d0b1f54f4e
 Revises:
-Create Date: 2017-01-24 20:54:23.416219
+Create Date: 2017-09-16 20:54:23.416219
 """
 from alembic import op
 import sqlalchemy as sa
@@ -16,7 +16,7 @@ depends_on = None
 
 def upgrade():
     op.create_table(
-        'greetings',
+        'access_logs',
         sa.Column('id', sa.Integer, primary_key=True),
         sa.Column(
             'when',
@@ -27,4 +27,4 @@ def upgrade():
 
 
 def downgrade():
-    op.drop_table('greetings')
+    op.drop_table('access_logs')

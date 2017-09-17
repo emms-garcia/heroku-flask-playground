@@ -3,9 +3,9 @@ import logging
 from flask import Flask
 
 from playground.config import CONFIG
+from playground.env import IS_DEVELOPMENT
 from playground.models import db
 from playground.routes import home_page
-from playground.utils.env import IS_DEVELOPMENT
 
 logging.basicConfig(
     level=logging.DEBUG

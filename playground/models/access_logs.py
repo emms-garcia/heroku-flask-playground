@@ -2,8 +2,8 @@ from playground.models import db
 from sqlalchemy.sql import func
 
 
-class Greetings(db.Model):
-    __tablename__ = 'greetings'
+class AccessLogs(db.Model):
+    __tablename__ = 'access_logs'
 
     id = db.Column(db.Integer, primary_key=True)
     when = db.Column(

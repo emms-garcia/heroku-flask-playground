@@ -1,6 +1,6 @@
 import os
 
-from playground.utils.env import ENV_KEY
+from playground.env import ENV_KEY
 
 
 class BaseConfig(object):
